@@ -518,18 +518,18 @@ const Lottery = (props) => {
             <img src={logo} alt="logo" />
           </div>
           <div className="footer-icons">
-            <a href="https://www.google.com/search">
+            <a href="https://twitter.com/pandamitnft">
               <BsTwitter color="white" fontSize="1.5em" />
             </a>
-            <a href="https://www.google.com/search">
+            {/* <a href="https://www.google.com/search">
               <BsDiscord color="white" fontSize="1.5em" />
-            </a>
-            <a href="https://www.google.com/search">
+            </a> */}
+            <a href="https://t.me/pandamint">
               <FaTelegram color="white" fontSize="1.5em" />
             </a>
-            <a href="https://www.google.com/search">
+            {/* <a href="https://www.google.com/search">
               <BsMedium color="white" fontSize="1.5em" />
-            </a>
+            </a> */}
           </div>
         </div>
         <div className="footer-section-two">
