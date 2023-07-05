@@ -1,0 +1,235 @@
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.left {
+  padding-top: 56px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pickSection {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pickSection button {
+  width: 140px;
+}
+
+.pickSection h3 {
+  margin: 10px 0px;
+  font-size: 16px;
+}
+
+.tickets {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+.ticket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 72px;
+}
+.ticket p {
+  font-weight: 700;
+  font-size: 24px;
+}
+.ticket span {
+  font-weight: 400;
+  font-size: 12px;
+}
+.table {
+  margin-top: 20px;
+}
+.tab {
+  color: white !important;
+}
+.right {
+  padding-top: 56px;
+}
+.rightCard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rightHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 19px;
+}
+.rightHeader h4 {
+  font-weight: 600;
+  font-size: 18px;
+}
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.actions button {
+  border-radius: 8px !important;
+}
+.iconContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 28px 0;
+}
+.swapInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  margin: 24px 0;
+}
+.totalLabel {
+  margin-top: 8px;
+}
+.willGet {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  margin-top: 24px;
+}
+.showButt {
+  display: none !important;
+}
+
+@media screen and (max-width: 1366px) {
+  .left {
+    padding-top: 24px;
+  }
+  .right {
+    padding-top: 24px;
+  }
+  .table {
+    margin-top: 0;
+  }
+  .pickSection h3 {
+    margin: 10px 0px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .table > div > div {
+    overflow-y: scroll;
+    max-height: 50vh;
+  }
+  .iconContainer {
+    margin: 24px 0;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .main {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .main {
+    min-height: calc(100vh - 133px);
+  }
+  .left {
+    padding: 15px;
+  }
+  .tickets {
+    flex-direction: column;
+  }
+  .table {
+    margin-top: 28px;
+  }
+  .table > div > div {
+    overflow-y: auto;
+    max-height: unset;
+  }
+  .right {
+    max-height: 90px !important;
+    overflow-y: hidden;
+    bottom: 0;
+    z-index: 20;
+    transition-duration: 0.3s;
+    display: flex;
+    flex-direction: column;
+  }
+  .right .actions button {
+    display: none;
+  }
+  .showButt {
+    display: flex !important;
+  }
+  .showButt svg {
+    transform: rotate(-90deg);
+  }
+  .showSwap {
+    max-height: 100vh !important;
+    padding: 0 !important;
+    position: fixed;
+    transition-duration: 0.3s;
+  }
+  .showSwap .actions button {
+    display: flex;
+  }
+  .showSwapCard {
+    margin-top: auto;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .actions {
+    margin-bottom: 0;
+  }
+  .ticket p {
+    font-size: 20px;
+  }
+  .ticket span {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .ticket {
+    gap: 2px;
+  }
+  .ticket p {
+    font-size: 18px;
+  }
+  .ticket span {
+    font-size: 10px;
+  }
+  .rightCard {
+    padding-bottom: 22px !important;
+  }
+  .rightHeader h4 {
+    font-size: 16px;
+  }
+  .willGet {
+    margin-top: 12px;
+  }
+  .willGet p {
+    font-size: 12px;
+  }
+  .swapInfo {
+    margin: 16px 0;
+  }
+  .iconContainer {
+    margin: 20px 0;
+  }
+}

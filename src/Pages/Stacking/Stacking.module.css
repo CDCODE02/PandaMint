@@ -1,0 +1,264 @@
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.spacer {
+  margin-top: 20px;
+}
+.left {
+  padding-top: 56px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.left h4 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.right {
+  padding-top: 56px;
+}
+.info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  gap: 16px;
+}
+.field {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.field p {
+  font-size: 14px;
+}
+.labelContainer {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.labelContainer svg {
+  position: relative;
+  top: 2px;
+  cursor: pointer;
+}
+.reward {
+  display: flex;
+  align-items: center;
+}
+.buttons {
+  width: 100%;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.buttons button:disabled {
+  opacity: 0.5;
+}
+.buttons button {
+  height: 56px !important;
+  border-radius: 16px !important;
+  text-transform: initial !important;
+  font-weight: 700 !important;
+  background-color: transparent !important;
+}
+.percentButns {
+  margin-top: 8px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: space-between;
+}
+.percentButns button {
+  height: 36px !important;
+  width: 68px !important;
+  border-radius: 12px !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+}
+.miniTableHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+  border-radius: 16px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+.miniTableHeader label {
+  width: 33%;
+  font-size: 12px !important;
+}
+.miniTableHeader label {
+  text-align: center;
+}
+.miniTableHeader label:last-child {
+  text-align: right;
+}
+.miniTableHeader label:first-child {
+  text-align: left;
+}
+.miniTableItems {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 48px;
+}
+.miniTableItem {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 400;
+}
+.miniTableItem div {
+  width: 33%;
+}
+.miniTableToken {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.miniTableToken img {
+  width: 20px;
+}
+.miniTableItem div {
+  text-align: center;
+}
+.miniTableItem div:last-child {
+  text-align: right;
+}
+.miniTableItem div:first-child {
+  text-align: left;
+}
+.earlyWithdraw {
+  text-align: center;
+  margin-top: 10px;
+  color: #da3832;
+}
+
+@media screen and (max-width: 1366px) {
+  .left {
+    padding-top: 24px;
+  }
+  .right {
+    padding-top: 24px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .buttons {
+    flex-direction: row;
+    gap: 16px;
+  }
+  .buttons button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .main {
+    flex-direction: column;
+  }
+  .rightCard {
+    height: calc(100vh - 605px);
+    padding-top: 32px !important;
+  }
+  .buttons {
+    flex-direction: column;
+  }
+  .buttons button {
+    height: 64px !important;
+    font-size: 18px !important;
+  }
+  .miniTableHeader label {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (max-width: 834px) {
+  .rightCard {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .left {
+    padding-bottom: 0 !important;
+  }
+  .rightCard {
+    padding: 40px !important;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .left {
+    padding: 15px !important;
+    padding-bottom: 0 !important;
+    gap: 0;
+  }
+  .rightCard {
+    height: fit-content;
+    padding: 15px !important;
+    padding-top: 24px !important;
+    padding-bottom: 24px !important;
+  }
+  .buttons button {
+    height: 48px !important;
+    border-radius: 12px !important;
+    font-size: 14px !important;
+  }
+  .percentButns {
+    margin-bottom: 24px;
+  }
+  .miniTableItems {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .miniTableHeader label {
+    font-size: 12px !important;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .left {
+    padding-top: 8px !important;
+  }
+  .field p {
+    font-size: 12px !important;
+  }
+  .percentButns button {
+    font-size: 12px !important;
+    border-radius: 8px !important;
+  }
+  .miniTableHeader {
+    padding: 14px 12px;
+    border-radius: 12px;
+    margin-top: 24px;
+  }
+  .miniTableHeader label {
+    font-size: 10px !important;
+  }
+  .miniTableItem p {
+    font-size: 12px;
+  }
+  .miniTableToken img {
+    width: 15px;
+  }
+  .rightCard {
+    padding-bottom: 32px !important;
+  }
+}

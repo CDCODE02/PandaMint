@@ -1,0 +1,192 @@
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.left {
+    width: 62%;
+    padding: 16px 60px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: 56px;
+}
+.links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.links a {
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    transition-duration: .3s;
+}
+.links a:hover {
+    color: #eb7773;
+}
+.links a.active {
+    color: #DA3832;
+}
+.burger {
+    display: none;
+}
+
+.right {
+    width: 38%;
+    padding: 12px 40px;
+    box-sizing: border-box;
+    background-color: #23242F;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.right svg {
+    color: white;
+}
+.themeBut {
+    width: 32px;
+    height: 32px;
+    background-color: #2C2D3A !important;
+}
+.curs {
+    background-color: #DA3832;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 24px;
+    box-sizing: border-box;
+    border-radius: 40px; 
+    display: flex;
+    align-items: center;
+}
+.walletButContainer {
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+    background-color: #2C2D3A;
+    padding-left: 20px;
+    box-sizing: border-box;
+    gap: 16px;
+}
+.bsc {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.bsc p {
+    font-size: 14px;
+    font-weight: 400;
+}
+.statusCircle {
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    background-color: #F3A953;
+}
+.walletBut {
+    background: #3B3C4E !important;
+    color: white !important;
+    text-transform: initial !important;
+    border-radius: 40px !important;
+    padding: 10px 24px !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    height: 100% !important;
+}
+
+@media screen and (max-width: 1280px) {
+    .left {
+        padding: 16px 40px;
+    }
+    .right {
+        padding: 12px 24px;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+
+    .left {
+        width: 100%;
+        justify-content: space-between;
+        position: fixed;
+        z-index: 10;
+    }
+    .right {
+        width: 100%;
+        position: fixed;
+        bottom: -1px;
+        gap: 24px;
+        justify-content: center;
+        z-index: 10;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .left {
+        padding: 24px 15px;
+    }
+    .right {
+        padding: 12px 15px;
+        justify-content: space-between;
+    }
+    .links {
+        display: none;
+    }
+    .burger {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .curs p {
+        display: none;
+    }
+    .curs p + p {
+        display: block;
+    }
+    .walletBut {
+        font-size: 12px !important;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .links {
+        gap: 0;
+    }
+    .bsc {
+        padding: 0;
+    }
+    .bsc p {
+        font-size: 12px;
+    }
+    .curs {
+        padding: 6px 18px;
+    }
+    .walletButContainer {
+        height: 36px;
+    }
+    .walletBut {
+        padding: 6px 13px !important;
+        font-size: 10px !important;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .right {
+        gap: 8px;
+    }
+    .curs {
+        font-size: 12px;
+    }
+    .walletButContainer {
+        gap: 4px;
+        padding-left: 8px;
+    }
+    .walletBut {
+        font-size: 10px !important;
+    }
+}

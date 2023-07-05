@@ -1,0 +1,29 @@
+.main {
+    background: #2C2D3A;
+    border-radius: 26px;
+    padding: 24px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+@media screen and (max-width: 1170px) {
+    .main {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 32px;
+        border-top-right-radius: 32px;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .main {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .main {
+        padding-bottom: 15px;
+    }
+}

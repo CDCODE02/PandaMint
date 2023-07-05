@@ -1,0 +1,472 @@
+.main {
+  width: 100%;
+  display: center;
+  justify-content: center;
+  color: white;
+}
+
+.lottery {
+  margin-top: 50px;
+  display: center;
+  justify-content: left;
+  color: white;
+}
+
+.lotteryh1 {
+  padding: 20px;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  font-family: monospace;
+}
+
+.lotteryp1 {
+  padding: 0px 50px 5px 50px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  font-family: monospace;
+}
+
+.token {
+  margin-top: 50px;
+  padding: 20px;
+  display: left;
+  justify-content: left;
+  color: white;
+}
+
+.tokenh1 {
+  padding: 20px;
+  margin-top: 50px;
+  text-align: left;
+  font-size: 40px;
+  color: white;
+  font-family: monospace;
+}
+
+.tokenp1 {
+  padding: 20px;
+  text-align: left;
+  font-size: 20px;
+  color: white;
+  font-family: monospace;
+}
+
+.headerlogo {
+  background-image: url(https://i.ibb.co/k1XXc7S/bg2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-width: 5px;
+  border-color: white;
+  border-radius: 30px;
+  padding: 30px 0px 150px 0px;
+  margin: 10px;
+}
+.section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.center {
+  padding-top: 100px;
+  text-align: center;
+  gap: 12px;
+  font-size: 60px;
+  font-family: monospace;
+}
+
+.button1 {
+  padding: 10px;
+  text-align: center;
+}
+
+.button {
+  padding: 10px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  font-size: 22px;
+  background: #ff486e;
+  text-decoration-style: double;
+  margin: 10px;
+  font-family: monospace;
+}
+
+.p {
+  padding-top: 5px;
+  text-align: center;
+  font-size: 22px;
+  color: white;
+  font-family: monospace;
+}
+
+.pickSection {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 21px;
+  padding-bottom: 24px;
+  max-height: calc(100vh - 195px);
+  overflow-y: scroll;
+}
+
+.pickSection button {
+  width: 140px;
+}
+
+.pickSection h3 {
+  margin: 10px 0px;
+  font-size: 16px;
+}
+
+.tickets {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+.ticket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 72px;
+}
+.ticket p {
+  font-weight: 700;
+  font-size: 24px;
+}
+.ticket span {
+  font-weight: 400;
+  font-size: 12px;
+}
+.table {
+  margin-top: 20px;
+}
+.tab {
+  color: white !important;
+}
+.right {
+  padding-top: 56px;
+}
+.rightCard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rightHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 19px;
+}
+.rightHeader h4 {
+  font-weight: 600;
+  font-size: 18px;
+}
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.actions button {
+  border-radius: 8px !important;
+}
+.iconContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 28px 0;
+}
+.swapInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  margin: 24px 0;
+}
+.totalLabel {
+  margin-top: 8px;
+}
+.willGet {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  margin-top: 24px;
+}
+.showButt {
+  display: none !important;
+}
+.footer-wrapper {
+  margin: 6rem 0rem;
+  display: flex;
+  margin-top: 10rem;
+}
+.footer-logo-container {
+  max-width: 110px;
+}
+.footer-icons {
+  margin-top: 2.5rem;
+}
+.footer-icons svg {
+  font-size: 1.5rem;
+  margin-right: 1.25rem;
+  color: #585858;
+}
+.footer-section-two {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.footer-section-columns {
+  display: flex;
+  flex-direction: column;
+  min-width: 190px;
+}
+.footer-section-columns span {
+  margin: 0.25rem 0rem;
+  font-weight: 600;
+  color: #4c4c4c;
+  cursor: pointer;
+}
+@media screen and (max-width: 1366px) {
+  .left {
+    padding-top: 24px;
+  }
+  .right {
+    padding-top: 24px;
+  }
+  .table {
+    margin-top: 0;
+  }
+  .pickSection h3 {
+    margin: 10px 0px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .table > div > div {
+    overflow-y: scroll;
+    max-height: 50vh;
+  }
+  .iconContainer {
+    margin: 24px 0;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .main {
+    justify-content: center;
+  }
+  .p {
+    align-items: justify;
+  }
+  .footer-section-two {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  .footer-section-columns {
+    margin: 1rem 0rem;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .main {
+    justify-content: center;
+  }
+  .headerlogo {
+    background-image: url(https://i.ibb.co/ZHpY12F/phonebg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-width: 5px;
+    border-color: white;
+    border-radius: 30px;
+    padding: 30px 20px 150px 20px;
+    margin: 10px;
+  }
+  .lotteryh1 {
+    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-family: monospace;
+  }
+
+  .lotteryp1 {
+    padding: 0px 20px 5px 20px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-family: monospace;
+  }
+
+  .p {
+    align-items: justify;
+  }
+  .left {
+    padding: 15px;
+  }
+  .tickets {
+    flex-direction: column;
+  }
+  .table {
+    margin-top: 28px;
+  }
+  .table > div > div {
+    overflow-y: auto;
+    max-height: unset;
+  }
+  .right {
+    max-height: 90px !important;
+    overflow-y: hidden;
+    bottom: 0;
+    z-index: 20;
+    transition-duration: 0.3s;
+    display: flex;
+    flex-direction: column;
+  }
+  .right .actions button {
+    display: none;
+  }
+  .showButt {
+    display: flex !important;
+  }
+  .showButt svg {
+    transform: rotate(-90deg);
+  }
+  .showSwap {
+    max-height: 100vh !important;
+    padding: 0 !important;
+    position: fixed;
+    transition-duration: 0.3s;
+  }
+  .showSwap .actions button {
+    display: flex;
+  }
+  .showSwapCard {
+    margin-top: auto;
+  }
+  .footer-wrapper {
+    flex-direction: column;
+  }
+  .footer-section-two {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .actions {
+    margin-bottom: 0;
+  }
+  .ticket p {
+    font-size: 20px;
+  }
+  .ticket span {
+    font-size: 12px;
+  }
+  .headerlogo {
+    background-image: url(https://i.ibb.co/ZHpY12F/phonebg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-width: 5px;
+    border-color: white;
+    border-radius: 30px;
+    padding: 30px 20px 150px 20px;
+    margin: 10px;
+  }
+  .lotteryh1 {
+    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-family: monospace;
+  }
+
+  .lotteryp1 {
+    padding: 0px 20px 5px 20px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-family: monospace;
+  }
+}
+.footer-wrapper {
+  flex-direction: column;
+}
+
+@media screen and (max-width: 360px) {
+  .ticket {
+    gap: 2px;
+  }
+  .headerlogo {
+    background-image: url(https://i.ibb.co/ZHpY12F/phonebg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-width: 5px;
+    border-color: white;
+    border-radius: 30px;
+    padding: 30px 20px 150px 20px;
+    margin: 10px;
+  }
+  .lotteryh1 {
+    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-family: monospace;
+  }
+
+  .lotteryp1 {
+    padding: 0px 10px 5px 10px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-family: monospace;
+  }
+  .ticket p {
+    font-size: 18px;
+  }
+  .ticket span {
+    font-size: 10px;
+  }
+  .rightCard {
+    padding-bottom: 22px !important;
+  }
+  .rightHeader h4 {
+    font-size: 16px;
+  }
+  .willGet {
+    margin-top: 12px;
+  }
+  .willGet p {
+    font-size: 12px;
+  }
+  .swapInfo {
+    margin: 16px 0;
+  }
+  .iconContainer {
+    margin: 20px 0;
+  }
+}

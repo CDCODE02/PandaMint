@@ -1,0 +1,10 @@
+.main {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 360px) {
+    .main {
+        font-size: 12px;
+    }
+}

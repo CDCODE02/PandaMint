@@ -1,0 +1,77 @@
+.main {
+  font-family: "Poppins" !important;
+}
+body {
+  overflow: hidden; /* Remove overflow from the entire body */
+}
+.app {
+  overflow: hidden; /* Remove overflow from the root div */
+}
+.footer-wrapper {
+  margin: 6rem 0rem;
+  display: flex;
+  margin-top: 10rem;
+  padding-left: 3rem;
+}
+.footer-logo-container {
+  max-width: 110px;
+}
+.footer-icons {
+  margin-top: 2.5rem;
+}
+.footer-icons svg {
+  font-size: 1.5rem;
+  margin-right: 1.25rem;
+  color: #585858;
+}
+.footer-section-one {
+  margin-left: 50px;
+}
+.footer-section-two {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+.footer-section-columns {
+  display: flex;
+  flex-direction: column;
+  min-width: 190px;
+}
+.footer-section-columns span {
+  margin: 0.25rem 0rem;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+}
+.footer-logo-container {
+  max-width: 110px;
+}
+@media screen and (max-width: 1170px) {
+  .content {
+    padding-top: 74px;
+    margin-bottom: 67px !important;
+  }
+  .footer-section-columns {
+    margin: 1rem 0rem;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .footer-wrapper {
+    flex-direction: column;
+  }
+  .footer-section-two {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .content {
+    margin-bottom: 59px !important;
+  }
+  .footer-wrapper {
+    flex-direction: column;
+  }
+}

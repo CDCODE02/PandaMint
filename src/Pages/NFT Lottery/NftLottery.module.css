@@ -1,0 +1,149 @@
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.left {
+    padding-top: 56px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.right {
+    padding: 24px;
+    padding-top: 56px;
+    padding-bottom: 0;
+}
+.right h4 {
+    font-weight: 600;
+    font-size: 18px;
+}
+.wrapper {
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 21px;
+    padding-bottom: 24px;
+    max-height: calc(100vh - 195px);
+    overflow-y: scroll;
+}
+.wrapper div {
+    width: calc(50% - 21px);
+}
+.secCard {
+    display: none;
+}
+@media screen and (max-width: 1366px) {
+    .left {
+        padding-top: 24px;
+    }
+    .right {
+        padding-top: 24px;
+    }
+    .wrapper {
+        max-height: calc(100vh - 165px);
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .left {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .main {
+        flex-direction: column;
+    }
+    .secCard {
+        display: flex;
+        flex-direction: column;
+        padding-top: 24px;
+        padding: 40px !important;
+    }
+    .wrapper {
+        overflow-y: auto;
+        max-height: unset;
+        gap: 20px;
+        padding-bottom: 0;
+    }
+    .wrapper div {
+        width: calc(25% - 15px);
+    }
+    .desktop {
+        display: none;
+    }
+    .header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header button {
+        display: none;
+    }
+    .right {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .main {
+        min-height: calc(100vh - 133px) !important;
+    }
+    .left {
+        padding: 15px;
+    }
+    .right {
+        max-height: 90px !important;
+        overflow-y: hidden;
+        bottom: 0;
+        z-index: 20;
+        transition-duration: .3s;
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+    }
+    .header button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+    }
+    .header button svg {
+        transform: rotate(-90deg);
+    }
+    .secCard {
+        padding: 15px !important;
+        padding-top: 24px !important;
+    }
+    .showNft {
+        max-height: 100vh !important;
+        padding: 0 !important;
+        position: fixed;
+        transition-duration: .3s;
+    }
+    .showNft {
+        display: flex;
+    }
+    .showNftCard {
+        margin-top: auto;
+    }
+    .wrapper {
+        gap: 8px;
+        overflow-y: scroll;
+        max-height: 85vh;
+    }
+    .wrapper div {
+        width: calc(50% - 4px);
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .right h4 {
+        font-size: 16px;
+    }
+}
